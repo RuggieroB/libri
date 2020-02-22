@@ -1,6 +1,6 @@
-Drop table if exists autore;
+Drop table if exists autori;
 
-create table autore
+create table autori
 (
     id integer primary key,
     cognome text not null,
@@ -10,13 +10,13 @@ create table autore
     sesso integer(1)
 );
 
-Insert into autore (cognome, nome, nascita, sesso) values ("d'Annunzio", "Gabriele", date("1863-03-12"), "1");
-Insert into autore (cognome) values ("Verga");
+Insert into autori (cognome, nome, nascita, sesso) values ("d'Annunzio", "Gabriele", date("1863-03-12"), "1");
+Insert into autori (cognome) values ("Verga");
 
 .header on 
 .mode column 
 
-Select * from autore;
+Select * from autori;
 
 drop table if exists libri;
 

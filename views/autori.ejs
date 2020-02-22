@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Autori</title>
+    </head>
+    <body>
+        <h1>Autori</h1><br>
+        <table>
+            <thead>
+                <tr>
+
+                    <th>id</th>
+                    <th>cognome</th>
+                    <th>nome</th>
+                    <th>nascita</th>
+                    <th>morte</th>
+                    <th>sesso</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% autori.forEach(function(autore){ %>
+                    <tr>
+                        <td><%= autore.id %></td>
+                        <td><%= autore.cognome %></td>
+                        <td><%= autore.nome %></td>
+                        <td><%= autore.nascita %></td>
+                        <td><%= autore.morte %></td>
+                        <td><%= autore.sesso %></td>
+                    </tr>
+                <% }) %>
+            </tbody>
+        </table>
+		<p>
+			<a href="/"><h4>Return to the home page</h4></a>
+		</p>
+    </body>
+</html>
